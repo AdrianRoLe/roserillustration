@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/roserillustration/static/css/main.f6c973c0.css",
+    "main.js": "/roserillustration/static/js/main.901c5fc6.js",
+    "static/js/787.9b0e2cf3.chunk.js": "/roserillustration/static/js/787.9b0e2cf3.chunk.js",
+    "index.html": "/roserillustration/index.html",
+    "main.f6c973c0.css.map": "/roserillustration/static/css/main.f6c973c0.css.map",
+    "main.901c5fc6.js.map": "/roserillustration/static/js/main.901c5fc6.js.map",
+    "787.9b0e2cf3.chunk.js.map": "/roserillustration/static/js/787.9b0e2cf3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6c973c0.css",
+    "static/js/main.901c5fc6.js"
+  ]
+}
