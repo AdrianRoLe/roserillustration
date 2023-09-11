@@ -20,16 +20,18 @@ const IllustrationItem: React.FC<Illustration> = ({
 	};
 
 	return (
-		<div className="block mb-8">
+		<div className="grid place-content-center mb-8">
 			<img
-				className="rounded-lg w-full h-full"
-				src="https://via.placeholder.com/150"
+				className="rounded-lg"
+				src={require(`../../assets/${src}`)}
 				alt="illustration"
 				onClick={handlePreviewClick}
 			/>
-			<div className="">
-				<div className="">{name}</div>
-				<div className="text-sm opacity-50">{date}</div>
+			<div className="mt-2">
+				<div className="pl-2 lg:pl-0">{name}</div>
+				<div className="pl-2 lg:pl-0 text-sm opacity-50 capitalize">
+					{date}
+				</div>
 			</div>
 
 			<div className="hidden">
@@ -53,7 +55,10 @@ const IllustrationItem: React.FC<Illustration> = ({
 				))}
 			</div>
 			{showPreview && (
-				<ImagePreview src={src} onClose={handleClosePreview} />
+				<ImagePreview
+					{...{ name, date, src, categories, tags }}
+					onClose={handleClosePreview}
+				/>
 			)}
 		</div>
 	);

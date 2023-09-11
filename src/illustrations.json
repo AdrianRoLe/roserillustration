@@ -1,73 +1,73 @@
 [
     {
-        "name": "illustration con el texto muy largo lalldff gdfgdfg 1",
-        "src": "img/illustration1.jpg",
-        "date": "2000-01-01",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Garden",
+        "src": "garden.jpeg",
+        "date": "september 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
     },
     {
-        "name": "illustration 2",
-        "src": "img/illustration2.jpg",
-        "date": "2000-01-02",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Vintage Flowers",
+        "src": "vintageflower.jpeg",
+        "date": "August 2023",
+        "categories": ["digital", "personal work"],
+        "tags": []
     },
     {
-        "name": "illustration 3",
-        "src": "img/illustration3.jpg",
-        "date": "2000-01-03",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Orange Glass Vase",
+        "src": "orangeglass.jpeg",
+        "date": "March 2023",
+        "categories": ["digital", "personal work"],
+        "tags": []
     },
     {
-        "name": "illustration 4",
-        "src": "img/illustration4.jpg",
-        "date": "2000-01-04",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Rose",
+        "src": "rose.jpeg",
+        "date": "February 2023",
+        "categories": ["digital", "personal work"],
+        "tags": []
     },
     {
-        "name": "illustration 5",
-        "src": "img/illustration5.jpg",
-        "date": "2000-01-05",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Flower Pots \"Bublé\"",
+        "src": "flowerpot1.jpeg",
+        "date": "February 2023",
+        "categories": ["digital", "personal work"],
+        "tags": ["Flower Pots"]
     },
     {
-        "name": "illustration 6",
-        "src": "img/illustration6.jpg",
-        "date": "2000-01-06",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Flower Pots \"Bell\"",
+        "src": "flowerpot2.jpeg",
+        "date": "February 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Flower Pots"]
     },
     {
-        "name": "illustration 7",
-        "src": "img/illustration7.jpg",
-        "date": "2000-01-07",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Flower Pots \"SunFlower\"",
+        "src": "flowerpot3.jpeg",
+        "date": "February 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Flower Pots"]
     },
     {
-        "name": "illustration 8",
-        "src": "img/illustration8.jpg",
-        "date": "2000-01-08",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Windows \"Rainy\"",
+        "src": "rainywindow.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Windows"]
     },
     {
-        "name": "illustration 9",
-        "src": "img/illustration9.jpg",
-        "date": "2000-01-09",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Windows \"Kitchen\"",
+        "src": "kitchenwindow.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Windows"]
     },
     
     {
-        "name": "illustration 10",
-        "src": "img/illustration10.jpg",
-        "date": "2000-01-10",
-        "categories": ["cat1", "cat2", "cat3"],
-        "tags": ["tag1", "tag2", "tag3"]
+        "name": "Peaches",
+        "src": "peaches.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
     }
 ]

@@ -1,6 +1,6 @@
 const AboutPage = () => {
 	return (
-		<div>
+		<div className="min-h-[55vh]">
 			<p>This is the about page.</p>
 		</div>
 	);

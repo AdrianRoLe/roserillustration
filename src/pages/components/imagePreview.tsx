@@ -1,11 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
+	name: string;
+	date: string;
 	src: string;
+	categories: string[];
+	tags: string[];
 	onClose: () => void;
 }
 
-const ImagePreview: React.FC<Props> = ({ src, onClose }) => {
+const ImagePreview: React.FC<Props> = ({
+	name,
+	date,
+	src,
+	categories,
+	tags,
+	onClose,
+}) => {
 	const ref = useRef<HTMLDivElement>(null);
 	const [show, setShow] = useState(false);
 
@@ -39,15 +50,18 @@ const ImagePreview: React.FC<Props> = ({ src, onClose }) => {
 			ref={ref}
 			onClick={onClose}
 		>
-			<div className="transform scale-100">
+			<div className="transform scale-80 md:scale-50">
 				<img
-					src={"https://via.placeholder.com/1500"}
+					src={require(`../../assets/${src}`)}
 					alt="Preview"
 					className="max-w-full max-h-full object-contain"
 					onLoad={() => {
 						ref.current?.classList.add("scale-100");
 					}}
 				/>
+				<div className="absolute bottom-0 left-0 w-full h-16 bg-black bg-opacity-50 flex justify-center items-center">
+					<div className="text-white text-2xl">{name}</div>
+				</div>
 			</div>
 		</div>
 	);
