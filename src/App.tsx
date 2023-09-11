@@ -11,9 +11,15 @@ const App = () => {
 			<BrowserRouter>
 				<Header />
 				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/about" element={<AboutPage />} />
-					<Route path="/contact" element={<ContactPage />} />
+					<Route path="/roserillustration" element={<HomePage />} />
+					<Route
+						path="/roserillustration/about"
+						element={<AboutPage />}
+					/>
+					<Route
+						path="/roserillustration/contact"
+						element={<ContactPage />}
+					/>
 					<Route path="*" element={<HomePage />} />
 				</Routes>
 				<Footer />

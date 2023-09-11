@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-	const [pageActive, setPageActive] = useState<string>("/");
+	const [pageActive, setPageActive] = useState<string>("/roserillustration");
 
 	return (
 		<div className="h-initial w-full justify-end flex">
@@ -10,11 +10,13 @@ const Navbar = () => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/" ? "text-[#FF3F8A]" : ""
+							pageActive === "/roserillustration"
+								? "text-[#FF3F8A]"
+								: ""
 						} hover:text-[#FF3F8A] px-3 py-2 transition duration-200 ease-in-out`}
-						to="/"
+						to="/roserillustration"
 						onClick={() => {
-							setPageActive("/");
+							setPageActive("/roserillustration");
 						}}
 					>
 						Works
@@ -24,11 +26,13 @@ const Navbar = () => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/about" ? "text-[#FF3F8A]" : ""
+							pageActive === "/roserillustration/about"
+								? "text-[#FF3F8A]"
+								: ""
 						} hover:text-[#FF3F8A]  px-3 py-2 transition duration-200 ease-in-out`}
-						to="/about"
+						to="/roserillustration/about"
 						onClick={() => {
-							setPageActive("/about");
+							setPageActive("/roserillustration/about");
 						}}
 					>
 						About
@@ -37,11 +41,13 @@ const Navbar = () => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/contact" ? "text-[#FF3F8A]" : ""
+							pageActive === "/roserillustration/contact"
+								? "text-[#FF3F8A]"
+								: ""
 						} hover:text-[#FF3F8A] px-3 py-2 transition duration-200 ease-in-out`}
-						to="/contact"
+						to="/roserillustration/contact"
 						onClick={() => {
-							setPageActive("/contact");
+							setPageActive("/roserillustration/contact");
 						}}
 					>
 						Contact

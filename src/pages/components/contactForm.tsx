@@ -12,7 +12,7 @@ const ContactForm: React.FC = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="max-w-md mx-auto">
+		<form onSubmit={handleSubmit} className="max-w-md sm:mr-auto mr-2">
 			<div className="mb-4">
 				<label
 					htmlFor="email"
