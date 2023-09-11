@@ -55,7 +55,8 @@
         "src": "rainywindow.jpeg",
         "date": "January 2023",
         "categories": ["digital","personal work"],
-        "tags": ["Windows"]
+        "tags": ["Windows"],
+        "hidden": "true"
     },
     {
         "name": "Windows \"Kitchen\"",
@@ -71,5 +72,159 @@
         "date": "January 2023",
         "categories": ["digital","personal work"],
         "tags": []
+    },
+    {
+        "name": "Iridescent",
+        "src": "iridescent.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Colors",
+        "src": "colors.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Ephemera",
+        "src": "ephemera.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Tangled Flowers \"Sun\"",
+        "src": "tangled1.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"]
+    },
+
+    {
+        "name": "Tangled Flowers \"Summer\"",
+        "src": "tangled2.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Tangled Flowers \"Autumn\"",
+        "src": "tangled3.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"],
+        "hidden": "true"
+    },
+    
+    {
+        "name": "Tangled Flowers \"Halloween\"",
+        "src": "tangled4.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Tangled Flowers \"Spooky\"",
+        "src": "tangled5.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Tangled Flowers \"Fresh\"",
+        "src": "tangled6.jpeg",
+        "date": "september 2022-January 2023",
+        "categories": ["digital","personal work"],
+        "tags": ["Tangled Flowers"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Glass",
+        "src": "glasspot.jpeg",
+        "date": "January 2023",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Autumn Flowers",
+        "src": "floresotoño.jpeg",
+        "date": "December 2022",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+    {
+        "name": "Landscapes \"Forest\"",
+        "src": "forest.jpeg",
+        "date": "October 2022",
+        "categories": ["digital","personal work"],
+        "tags": ["Landscapes"]
+    },
+
+    {
+        "name": "Landscapes \"Sunset\"",
+        "src": "sunset.jpeg",
+        "date": "October 2022",
+        "categories": ["digital","personal work"],
+        "tags": ["Landscapes"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Landscapes \"Golden Hour\"",
+        "src": "goldenhour.jpeg",
+        "date": "October 2022",
+        "categories": ["digital","personal work"],
+        "tags": ["Landscapes"],
+        "hidden": "true"
+    },
+
+    {
+        "name": "Amapolas",
+        "src": "amapolas.jpeg",
+        "date": "May 2022",
+        "categories": ["digital","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Leaves",
+        "src": "leaves.jpeg",
+        "date": "May 2022",
+        "categories": ["watercolor","personal work"],
+        "tags": []
+    },
+
+    {
+        "name": "Snowy Mountains",
+        "src": "snowymountains.jpeg",
+        "date": "February 2022",
+        "categories": ["gouache","personal work"],
+        "tags": []
     }
+
+
+
+
+
+
+    
+
+
+
+
+
+
 ]

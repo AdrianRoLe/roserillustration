@@ -32,7 +32,11 @@ const IllustrationItem: React.FC<Props> = ({
 				className="rounded-lg"
 				src={require(`../../assets/${src}`)}
 				alt="illustration"
-				onClick={handlePreviewClick}
+				onClick={() => {
+					if (tags.length > 0 && selectedCollection === "")
+						setSelectedCollection(tags[0]);
+					else handlePreviewClick();
+				}}
 			/>
 			{selectedCollection === "" && (
 				<div className="mt-3">
