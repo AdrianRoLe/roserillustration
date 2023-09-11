@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { Illustration } from "../../models";
 import ImagePreview from "./imagePreview";
 
-const IllustrationItem: React.FC<Illustration> = ({
+interface Props extends Illustration {
+	selectedCollection: string;
+	setSelectedCollection: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const IllustrationItem: React.FC<Props> = ({
 	name,
 	date,
 	src,
 	categories,
 	tags,
+	selectedCollection,
+	setSelectedCollection,
 }) => {
 	const [showPreview, setShowPreview] = useState(false);
 
@@ -27,13 +34,27 @@ const IllustrationItem: React.FC<Illustration> = ({
 				alt="illustration"
 				onClick={handlePreviewClick}
 			/>
-			<div className="mt-2">
+			{selectedCollection === "" && (
+				<div className="mt-3">
+					{tags.map((tag) => (
+						<div
+							key={tag}
+							className="inline-block bg-gray-200 text-gray-700 rounded-full px-2 mr-2 cursor-pointer"
+							onClick={() => {
+								setSelectedCollection(tag);
+							}}
+						>
+							{tag}
+						</div>
+					))}
+				</div>
+			)}
+			<div className={selectedCollection !== "" ? "mt-2" : ""}>
 				<div className="pl-2 lg:pl-0">{name}</div>
 				<div className="pl-2 lg:pl-0 text-sm opacity-50 capitalize">
 					{date}
 				</div>
 			</div>
-
 			<div className="hidden">
 				{categories.map((category) => (
 					<div
@@ -44,16 +65,7 @@ const IllustrationItem: React.FC<Illustration> = ({
 					</div>
 				))}
 			</div>
-			<div className="hidden">
-				{tags.map((tags) => (
-					<div
-						key={tags}
-						className="inline-block bg-gray-200 text-gray-700 rounded-full px-2 mr-2 mb-2"
-					>
-						{tags}
-					</div>
-				))}
-			</div>
+
 			{showPreview && (
 				<ImagePreview
 					{...{ name, date, src, categories, tags }}

@@ -5,6 +5,8 @@ import IllustrationGrid from "./components/illustrationGrid";
 
 const HomePage = () => {
 	const [Illustrations, setIllustrations] = useState<Illustration[]>([]);
+	const [selectedCollection, setSelectedCollection] = useState<string>("");
+
 	useEffect(() => {
 		const illustrationLoaderService = new IllustrationLoaderService(
 			"src/illustrations.json"
@@ -12,8 +14,6 @@ const HomePage = () => {
 		illustrationLoaderService
 			.load()
 			.then(() => {
-				console.log("Illustrations loaded");
-				console.log(illustrationLoaderService.getIllustrations());
 				setIllustrations(illustrationLoaderService.getIllustrations());
 			})
 			.catch((error) => {
@@ -21,9 +21,55 @@ const HomePage = () => {
 			});
 	}, []);
 
+	useEffect(() => {
+		if (selectedCollection !== "") {
+			setIllustrations(
+				Illustrations.filter((illustration) =>
+					illustration.tags.includes(selectedCollection)
+				)
+			);
+		} else {
+			const illustrationLoaderService = new IllustrationLoaderService(
+				"src/illustrations.json"
+			);
+			illustrationLoaderService
+				.load()
+				.then(() => {
+					setIllustrations(
+						illustrationLoaderService.getIllustrations()
+					);
+				})
+				.catch((error) => {
+					console.log(error);
+				});
+		}
+		// scroll to top
+		window.scrollTo(0, 0);
+	}, [selectedCollection]);
+
 	return (
 		<div>
-			<IllustrationGrid illustrations={Illustrations} />
+			<IllustrationGrid
+				illustrations={
+					selectedCollection === ""
+						? Illustrations.filter(
+								(illustration) => !illustration.hidden
+						  )
+						: Illustrations
+				}
+				selectedCollection={selectedCollection}
+				setSelectedCollection={setSelectedCollection}
+			/>
+			{selectedCollection !== "" && (
+				<div
+					className="rounded-full bg-[#AAB000] bg-opacity-80 text-black transition duration-200 ease-in-out text-center w-fit px-4 py-2 mb-3 cursor-pointer m-auto"
+					onClick={() => {
+						setSelectedCollection("");
+					}}
+				>
+					Back to main page
+				</div>
+			)}
 		</div>
 	);
 };

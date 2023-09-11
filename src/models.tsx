@@ -4,4 +4,5 @@ export interface Illustration {
 	src: string;
 	categories: string[];
 	tags: string[];
+	hidden?: boolean;
 }

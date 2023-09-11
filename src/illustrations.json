@@ -32,21 +32,23 @@
         "src": "flowerpot1.jpeg",
         "date": "February 2023",
         "categories": ["digital", "personal work"],
-        "tags": ["Flower Pots"]
+        "tags": ["Flower Pots Collection"]
     },
     {
         "name": "Flower Pots \"Bell\"",
         "src": "flowerpot2.jpeg",
         "date": "February 2023",
         "categories": ["digital","personal work"],
-        "tags": ["Flower Pots"]
+        "tags": ["Flower Pots Collection"],
+        "hidden": "true"
     },
     {
         "name": "Flower Pots \"SunFlower\"",
         "src": "flowerpot3.jpeg",
         "date": "February 2023",
         "categories": ["digital","personal work"],
-        "tags": ["Flower Pots"]
+        "tags": ["Flower Pots Collection"],
+        "hidden": "true"
     },
     {
         "name": "Windows \"Rainy\"",

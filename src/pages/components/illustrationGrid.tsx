@@ -5,9 +5,15 @@ import IllustrationItem from "./illustrationItem";
 
 interface Props {
 	illustrations: Illustration[];
+	selectedCollection: string;
+	setSelectedCollection: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const IllustrationGrid: React.FC<Props> = ({ illustrations }) => {
+const IllustrationGrid: React.FC<Props> = ({
+	illustrations,
+	selectedCollection,
+	setSelectedCollection,
+}) => {
 	const breakpointColumnsObj = {
 		default: 3,
 		1100: 2,
@@ -21,7 +27,12 @@ const IllustrationGrid: React.FC<Props> = ({ illustrations }) => {
 			columnClassName="masonry-grid_column"
 		>
 			{illustrations.map((illustration) => (
-				<IllustrationItem key={illustration.name} {...illustration} />
+				<IllustrationItem
+					key={illustration.name}
+					{...illustration}
+					selectedCollection={selectedCollection}
+					setSelectedCollection={setSelectedCollection}
+				/>
 			))}
 		</Masonry>
 	);

@@ -8,8 +8,6 @@ class IllustrationLoaderService {
 	}
 
 	async load(): Promise<void> {
-		console.log("Loading illustrations...");
-		console.log(data);
 		this.illustrations = data as unknown as Illustration[];
 	}
 

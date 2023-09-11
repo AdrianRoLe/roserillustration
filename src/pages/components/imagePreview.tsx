@@ -61,6 +61,33 @@ const ImagePreview: React.FC<Props> = ({
 				/>
 				<div className="absolute bottom-0 left-0 w-full h-16 bg-black bg-opacity-50 flex justify-center items-center">
 					<div className="text-white text-2xl">{name}</div>
+					{tags && tags.length > 0 && (
+						<>
+							<div className="text-white text-4xl mx-4">-</div>
+							<div className="text-white text-2xl">
+								{tags.map((tag) => (
+									<div key={tag} className="inline-block">
+										{tag}
+									</div>
+								))}
+							</div>
+						</>
+					)}
+					{categories && categories.length > 0 && (
+						<>
+							<div className="text-white text-4xl mx-4">-</div>
+							<div className="text-white text-2xl">
+								{categories.map((category) => (
+									<div
+										key={category}
+										className="inline-block mr-2"
+									>
+										#{category}
+									</div>
+								))}
+							</div>
+						</>
+					)}
 				</div>
 			</div>
 		</div>
