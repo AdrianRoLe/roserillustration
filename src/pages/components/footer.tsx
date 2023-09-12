@@ -2,7 +2,7 @@ const Footer = () => {
 	return (
 		<div>
 			<img
-				className="w-[10vh] h-full object-cover my-3 mx-auto"
+				className="w-[14vh] h-full object-cover my-3 mx-auto"
 				src={require("../../assets/footer_icon.png")}
 				alt="logo"
 			/>

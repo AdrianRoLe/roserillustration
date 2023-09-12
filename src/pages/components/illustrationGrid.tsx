@@ -17,13 +17,13 @@ const IllustrationGrid: React.FC<Props> = ({
 	const breakpointColumnsObj = {
 		default: 3,
 		1100: 2,
-		700: 1,
+		768: 1,
 	};
 
 	return (
 		<Masonry
 			breakpointCols={breakpointColumnsObj}
-			className="flex gap-4 max-w-[1420px] justify-center m-auto"
+			className="flex gap-4 max-w-[1420px] justify-center m-auto 2sm:mx-8 lg:mx-auto"
 			columnClassName="masonry-grid_column"
 		>
 			{illustrations.map((illustration) => (

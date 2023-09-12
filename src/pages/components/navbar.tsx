@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+import { FC } from "react";
+
+interface NavbarProps {
+	callbackAction: (action: string) => void;
+}
+
+const Navbar: FC<NavbarProps> = ({ callbackAction }) => {
 	const [pageActive, setPageActive] = useState<string>("/roserillustration");
 
 	return (
@@ -17,6 +23,7 @@ const Navbar = () => {
 						to="/roserillustration"
 						onClick={() => {
 							setPageActive("/roserillustration");
+							callbackAction("clear");
 						}}
 					>
 						Works

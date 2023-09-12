@@ -1,6 +1,12 @@
 import Navbar from "./navbar";
 
-const Header = () => {
+import { ReactElement } from "react";
+
+interface HeaderProps {
+	callbackAction: (action: string) => void;
+}
+
+const Header = ({ callbackAction }: HeaderProps): ReactElement => {
 	return (
 		<div className="flex h-1/5 w-full mb-8 max-w-[1420px] m-auto">
 			<div className="sm:max-w-[500px] h-auto">
@@ -10,7 +16,7 @@ const Header = () => {
 					alt="logo"
 				/>
 			</div>
-			<Navbar />
+			<Navbar callbackAction={callbackAction} />
 		</div>
 	);
 };

@@ -5,4 +5,5 @@ export interface Illustration {
 	categories: string[];
 	tags: string[];
 	hidden?: boolean;
+	desc?: string;
 }

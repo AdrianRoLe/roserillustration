@@ -27,15 +27,28 @@ const IllustrationItem: React.FC<Props> = ({
 	};
 
 	return (
-		<div className="grid place-content-center mb-8">
+		<div className="grid place-content-center mb-8 relative">
+			{tags.length > 0 &&
+				selectedCollection === "" &&
+				!categories.includes("project") && (
+					<div className="absolute h-8 top-8 right-0 transform -translate-y-full bg-gray-800 text-white px-2 py-1 rounded-bl-lg">
+						Collection
+					</div>
+				)}
+			{categories.includes("project") && selectedCollection === "" && (
+				<div className="absolute h-8 top-8 right-0 transform -translate-y-full bg-gray-800 text-white px-2 py-1 rounded-bl-lg">
+					Project
+				</div>
+			)}
 			<img
 				className="rounded-lg"
-				src={require(`../../assets/${src}`)}
-				alt="illustration"
+				src={require(`../../assets/illustrations/${src}`)}
 				onClick={() => {
-					if (tags.length > 0 && selectedCollection === "")
+					if (tags.length > 0 && selectedCollection === "") {
 						setSelectedCollection(tags[0]);
-					else handlePreviewClick();
+					} else {
+						handlePreviewClick();
+					}
 				}}
 			/>
 			{selectedCollection === "" && (
