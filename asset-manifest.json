@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/roserillustration/static/css/main.bf7bc92b.css",
-    "main.js": "/roserillustration/static/js/main.b238c8ff.js",
+    "main.css": "/roserillustration/static/css/main.0f2dac77.css",
+    "main.js": "/roserillustration/static/js/main.b46b15df.js",
     "static/js/787.9b0e2cf3.chunk.js": "/roserillustration/static/js/787.9b0e2cf3.chunk.js",
     "static/media/mail_icon.png": "/roserillustration/static/media/mail_icon.8307ccb1eabb250bfa93.png",
     "static/media/snowymountains.jpeg": "/roserillustration/static/media/snowymountains.e650b89f639a0a909d11.jpeg",
@@ -33,21 +33,24 @@
     "static/media/tangled6.jpeg": "/roserillustration/static/media/tangled6.676b19256e346e1e6002.jpeg",
     "static/media/boletus.jpeg": "/roserillustration/static/media/boletus.3db8d0277aceb5386d11.jpeg",
     "static/media/sunset.jpeg": "/roserillustration/static/media/sunset.f7062287d0b4565f72a7.jpeg",
+    "static/media/signepropi2.jpeg": "/roserillustration/static/media/signepropi2.6277b8e24afaf9a34465.jpeg",
     "static/media/floresotoño.jpeg": "/roserillustration/static/media/floresotoño.390d1e1f1e701680e6be.jpeg",
     "static/media/tangled4.jpeg": "/roserillustration/static/media/tangled4.f784e65e585f6adb1970.jpeg",
     "static/media/blueberrypot.jpeg": "/roserillustration/static/media/blueberrypot.ec27a52be35ac821f994.jpeg",
+    "static/media/signepropi1.jpeg": "/roserillustration/static/media/signepropi1.9a55688fe6b7abb7ca50.jpeg",
+    "static/media/signepropi3.jpeg": "/roserillustration/static/media/signepropi3.a72094181f0b5125901b.jpeg",
     "static/media/rose.jpeg": "/roserillustration/static/media/rose.68b34c9669d2a62703aa.jpeg",
     "static/media/flowerpot3.jpeg": "/roserillustration/static/media/flowerpot3.6a798745596eedf22607.jpeg",
     "static/media/flowerpot1.jpeg": "/roserillustration/static/media/flowerpot1.563258c44326d6a1d697.jpeg",
     "static/media/flowerpot2.jpeg": "/roserillustration/static/media/flowerpot2.e5142855ed68f0985148.jpeg",
     "static/media/footer.png": "/roserillustration/static/media/footer.c6edfd7d066e6b07e783.png",
     "index.html": "/roserillustration/index.html",
-    "main.bf7bc92b.css.map": "/roserillustration/static/css/main.bf7bc92b.css.map",
-    "main.b238c8ff.js.map": "/roserillustration/static/js/main.b238c8ff.js.map",
+    "main.0f2dac77.css.map": "/roserillustration/static/css/main.0f2dac77.css.map",
+    "main.b46b15df.js.map": "/roserillustration/static/js/main.b46b15df.js.map",
     "787.9b0e2cf3.chunk.js.map": "/roserillustration/static/js/787.9b0e2cf3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf7bc92b.css",
-    "static/js/main.b238c8ff.js"
+    "static/css/main.0f2dac77.css",
+    "static/js/main.b46b15df.js"
   ]
 }
