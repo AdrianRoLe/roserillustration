@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/roserillustration/static/css/main.0f2dac77.css",
-    "main.js": "/roserillustration/static/js/main.b46b15df.js",
+    "main.css": "/roserillustration/static/css/main.7c146286.css",
+    "main.js": "/roserillustration/static/js/main.9ae6253b.js",
     "static/js/787.9b0e2cf3.chunk.js": "/roserillustration/static/js/787.9b0e2cf3.chunk.js",
     "static/media/mail_icon.png": "/roserillustration/static/media/mail_icon.8307ccb1eabb250bfa93.png",
     "static/media/snowymountains.jpeg": "/roserillustration/static/media/snowymountains.e650b89f639a0a909d11.jpeg",
@@ -45,12 +45,12 @@
     "static/media/flowerpot2.jpeg": "/roserillustration/static/media/flowerpot2.e5142855ed68f0985148.jpeg",
     "static/media/footer.png": "/roserillustration/static/media/footer.c6edfd7d066e6b07e783.png",
     "index.html": "/roserillustration/index.html",
-    "main.0f2dac77.css.map": "/roserillustration/static/css/main.0f2dac77.css.map",
-    "main.b46b15df.js.map": "/roserillustration/static/js/main.b46b15df.js.map",
+    "main.7c146286.css.map": "/roserillustration/static/css/main.7c146286.css.map",
+    "main.9ae6253b.js.map": "/roserillustration/static/js/main.9ae6253b.js.map",
     "787.9b0e2cf3.chunk.js.map": "/roserillustration/static/js/787.9b0e2cf3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f2dac77.css",
-    "static/js/main.b46b15df.js"
+    "static/css/main.7c146286.css",
+    "static/js/main.9ae6253b.js"
   ]
 }
