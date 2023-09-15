@@ -23,7 +23,7 @@ const App = () => {
 				<Header callbackAction={callbackAction} />
 				<Routes>
 					<Route
-						path="/roserillustration"
+						path="/roserillustration/"
 						element={<HomePage action={currentAction} />}
 					/>
 					<Route

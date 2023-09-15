@@ -43,6 +43,7 @@ const IllustrationItem: React.FC<Props> = ({
 			<img
 				className="rounded-lg"
 				src={require(`../../assets/illustrations/${src}`)}
+				alt={`${name} illustration`}
 				onClick={() => {
 					if (tags.length > 0 && selectedCollection === "") {
 						setSelectedCollection(tags[0]);

@@ -14,6 +14,12 @@ class IllustrationLoaderService {
 	getIllustrations(): Illustration[] {
 		return this.illustrations;
 	}
+
+	getProjectIllustrations(): Illustration[] {
+		return this.illustrations.filter((illustration) =>
+			illustration.categories.includes("project")
+		);
+	}
 }
 
 export default IllustrationLoaderService;

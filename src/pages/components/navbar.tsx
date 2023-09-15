@@ -8,7 +8,7 @@ interface NavbarProps {
 }
 
 const Navbar: FC<NavbarProps> = ({ callbackAction }) => {
-	const [pageActive, setPageActive] = useState<string>("/roserillustration");
+	const [pageActive, setPageActive] = useState<string>("/roserillustration/");
 
 	return (
 		<div className="h-initial w-full justify-end flex">
@@ -16,13 +16,13 @@ const Navbar: FC<NavbarProps> = ({ callbackAction }) => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/roserillustration"
+							pageActive === "/roserillustration/"
 								? "text-[#FF3F8A]"
 								: ""
 						} hover:text-[#FF3F8A] px-3 py-2 transition duration-200 ease-in-out`}
-						to="/roserillustration"
+						to="/roserillustration/"
 						onClick={() => {
-							setPageActive("/roserillustration");
+							setPageActive("/roserillustration/");
 							callbackAction("clear");
 						}}
 					>
@@ -33,13 +33,13 @@ const Navbar: FC<NavbarProps> = ({ callbackAction }) => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/roserillustration/about"
+							pageActive === "/roserillustration/about/"
 								? "text-[#FF3F8A]"
 								: ""
 						} hover:text-[#FF3F8A]  px-3 py-2 transition duration-200 ease-in-out`}
-						to="/roserillustration/about"
+						to="/roserillustration/about/"
 						onClick={() => {
-							setPageActive("/roserillustration/about");
+							setPageActive("/roserillustration/about/");
 						}}
 					>
 						About
@@ -48,13 +48,13 @@ const Navbar: FC<NavbarProps> = ({ callbackAction }) => {
 				<div>
 					<Link
 						className={`${
-							pageActive === "/roserillustration/contact"
+							pageActive === "/roserillustration/contact/"
 								? "text-[#FF3F8A]"
 								: ""
 						} hover:text-[#FF3F8A] px-3 py-2 transition duration-200 ease-in-out`}
-						to="/roserillustration/contact"
+						to="/roserillustration/contact/"
 						onClick={() => {
-							setPageActive("/roserillustration/contact");
+							setPageActive("/roserillustration/contact/");
 						}}
 					>
 						Contact

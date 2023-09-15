@@ -9,7 +9,8 @@ interface HomePageProps {
 }
 
 const HomePage = ({ action }: HomePageProps) => {
-	const [Illustrations, setIllustrations] = useState<Illustration[]>([]);
+	const [illustrations, setIllustrations] = useState<Illustration[]>([]);
+	const [projects, setProjects] = useState<Illustration[]>([]);
 	const [selectedCollection, setSelectedCollection] = useState<string>("");
 	const [selectedProject, setSelectedProject] = useState<string>("");
 
@@ -21,6 +22,9 @@ const HomePage = ({ action }: HomePageProps) => {
 			.load()
 			.then(() => {
 				setIllustrations(illustrationLoaderService.getIllustrations());
+				setProjects(
+					illustrationLoaderService.getProjectIllustrations()
+				);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -36,7 +40,7 @@ const HomePage = ({ action }: HomePageProps) => {
 
 	useEffect(() => {
 		if (selectedCollection !== "") {
-			const updatedIllustrations = Illustrations.filter((illustration) =>
+			const updatedIllustrations = illustrations.filter((illustration) =>
 				illustration.tags.includes(selectedCollection)
 			);
 			setIllustrations(updatedIllustrations);
@@ -48,8 +52,13 @@ const HomePage = ({ action }: HomePageProps) => {
 					isProject = false;
 				}
 			});
+			const updatedProjects = projects.filter((project) =>
+				project.tags.includes(selectedCollection)
+			);
+
 			if (isProject) {
 				setSelectedProject(selectedCollection);
+				setProjects(updatedProjects);
 			}
 			window.scrollTo(0, 0);
 		} else {
@@ -62,6 +71,9 @@ const HomePage = ({ action }: HomePageProps) => {
 					setIllustrations(
 						illustrationLoaderService.getIllustrations()
 					);
+					setProjects(
+						illustrationLoaderService.getProjectIllustrations()
+					);
 				})
 				.catch((error) => {
 					console.log(error);
@@ -72,17 +84,46 @@ const HomePage = ({ action }: HomePageProps) => {
 	return (
 		<div>
 			{selectedProject === "" && (
-				<IllustrationGrid
-					illustrations={
-						selectedCollection === ""
-							? Illustrations.filter(
-									(illustration) => !illustration.hidden
-							  )
-							: Illustrations
-					}
-					selectedCollection={selectedCollection}
-					setSelectedCollection={setSelectedCollection}
-				/>
+				<>
+					{selectedCollection !== "" && (
+						<div className="text-center text-2xl font-bold mt-8 mb-4">
+							{selectedCollection}
+						</div>
+					)}
+					<IllustrationGrid
+						illustrations={
+							selectedCollection === ""
+								? illustrations.filter(
+										(illustration) =>
+											!illustration.hidden &&
+											!illustration.categories.includes(
+												"project"
+											)
+								  )
+								: illustrations
+						}
+						selectedCollection={selectedCollection}
+						setSelectedCollection={setSelectedCollection}
+					/>
+					{selectedCollection === "" && (
+						<>
+							<div className="text-center text-2xl font-bold mt-8 mb-4">
+								Projects
+							</div>
+							<IllustrationGrid
+								illustrations={
+									selectedCollection === ""
+										? projects.filter(
+												(project) => !project.hidden
+										  )
+										: projects
+								}
+								selectedCollection={selectedCollection}
+								setSelectedCollection={setSelectedCollection}
+							/>
+						</>
+					)}
+				</>
 			)}
 			{selectedProject === "" && selectedCollection !== "" && (
 				<div
@@ -96,7 +137,7 @@ const HomePage = ({ action }: HomePageProps) => {
 				</div>
 			)}
 			{selectedProject !== "" && (
-				<ProjectIllustrations illustrations={Illustrations} />
+				<ProjectIllustrations illustrations={projects} />
 			)}
 			{selectedProject !== "" && (
 				<div
